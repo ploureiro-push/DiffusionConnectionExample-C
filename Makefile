@@ -22,11 +22,11 @@ CC			= gcc
 CFLAGS		+= -g -Wall -Werror -std=c99 -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=700 -I$(DIFFUSION_C_CLIENT_INCDIR)
 LDFLAGS		+= $(DIFFUSION_C_CLIENT_LIBDIR)/libdiffusion.a -lpthread -lpcre -lz $(LIBS)
 
-# LDFLAGS     += -lssl -lcrypto
+LDFLAGS     += -lssl -lcrypto
 
 # added per `brew link openssl` instructions
-LDFLAGS		+= -L../../openssl/lib
-CFLAGS		+= -I../../openssl/include
+# LDFLAGS		+= -L/usr/local/opt/openssl/lib
+CFLAGS		+= -I/usr/local/opt/openssl/include
 
 ARFLAGS		+=
 SOURCES 	= connect.c
