@@ -7,7 +7,7 @@ class Openssl < Formula
   url "https://www.openssl.org/source/openssl-1.1.0g.tar.gz"
   mirror "https://dl.bintray.com/homebrew/mirror/openssl-1.1.0g.tar.gz"
   mirror "https://www.mirrorservice.org/sites/ftp.openssl.org/source/openssl-1.1.0g.tar.gz"
-  sha256 "931948408721d0fbc4ecfd21825d4de520f07ce9f7775949b2932e5a5c5e8aed"
+  sha256 "de4d501267da39310905cb6dc8c6121f7a2cad45a7707f76df828fe1b85073af"
 
   bottle do
     sha256 "c9c5e017edabe41ae55ed10ba5b94b834ee494e7f362d7245fbb0b137c876810" => :catalina
