@@ -1,3 +1,4 @@
 
 target/objs/connect.o
 *.o
+target/bin/connect
