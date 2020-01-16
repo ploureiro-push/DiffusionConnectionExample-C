@@ -27,6 +27,12 @@ LDFLAGS     += -lssl -lcrypto
 # added per `brew link openssl` instructions
 # LDFLAGS		+= -L/usr/local/opt/openssl/lib
 CFLAGS		+= -I/usr/local/opt/openssl/include
+CPPFLAGS	+= -I/usr/local/opt/openssl/include
+
+
+#  Link Time optimisation changes (doesnt seem to change anything)
+# CFLAGS		+= -flto -fno-lto
+# LDFLAGS		+= -flto -fuse-linker-plugin
 
 ARFLAGS		+=
 SOURCES 	= connect.c
